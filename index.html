@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Espace Providence</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-ep">EP</span>
+        <div class="logo-text">
+          <span class="logo-name">Espace Providence</span>
+          <span class="logo-sub">Restaurant</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#livraison">Livraison</a></li>
+        <li><a href="#horaires">Horaires</a></li>
+        <li><a href="#contact" class="btn-nav">Réserver</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#accueil" class="mobile-link">Accueil</a></li>
+      <li><a href="#menu" class="mobile-link">Menu</a></li>
+      <li><a href="#livraison" class="mobile-link">Livraison</a></li>
+      <li><a href="#horaires" class="mobile-link">Horaires</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Bienvenue au</p>
+      <h1 class="hero-title">
+        <span class="line1">Espace</span>
+        <span class="line2">Providence</span>
+      </h1>
+      <p class="hero-tagline">Saveurs authentiques · Cuisine africaine &amp; internationale</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn-primary">Voir le Menu</a>
+        <a href="#contact" class="btn-ghost">Nous contacter</a>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-open">Ouvert</span>
+        <span class="badge-hours">10h – 23h30</span>
+        <span class="badge-sep">·</span>
+        <span class="badge-hours">🛵 Livraison dès 12h</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Découvrir</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT STRIP ===== -->
+  <section class="about-strip">
+    <div class="strip-item">
+      <span class="strip-icon">🍽️</span>
+      <span>Cuisine Authentique</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">🕙</span>
+      <span>Ouvert 6j/7</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">🌿</span>
+      <span>Produits Frais</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <span class="strip-icon">📞</span>
+      <span>91 39 35 41</span>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Notre Carte</p>
+        <h2 class="section-title">Le Menu</h2>
+        <div class="title-ornament"><span></span><span class="dot"></span><span></span></div>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="local">Plats Locaux</button>
+        <button class="tab" data-tab="international">International</button>
+        <button class="tab" data-tab="boissons">Boissons</button>
+      </div>
+
+      <!-- Plats Locaux -->
+      <div class="tab-content active" id="tab-local">
+        <div class="menu-grid">
+
+          <div class="menu-category">
+            <h3 class="cat-title">Plats Traditionnels</h3>
+            <div class="menu-items">
+              <div class="menu-item" data-name="Adokougbi Pinon" data-price="1500 – 3000 F">
+                <div class="item-info">
+                  <span class="item-name">Adokougbi Pinon</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1500 – 3000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Djinkoumé Poulet" data-price="1500 – 3000 F">
+                <div class="item-info">
+                  <span class="item-name">Djinkoumé Poulet</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1500 – 3000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Sifio Pilon" data-price="2500 – 4000 F">
+                <div class="item-info">
+                  <span class="item-name">Sifio Pilon</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">2500 – 4000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Couscous" data-price="1500 – 3000 F">
+                <div class="item-info">
+                  <span class="item-name">Couscous</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1500 – 3000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Attiéké Poisson Aloco" data-price="1500 – 4000 F">
+                <div class="item-info">
+                  <span class="item-name">Attiéké Poisson Aloco</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1500 – 4000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Akpan Kanami" data-price="1000 – 3000 F">
+                <div class="item-info">
+                  <span class="item-name">Akpan Kanami</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1000 – 3000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Akpan Tilapia" data-price="2500 F">
+                <div class="item-info">
+                  <span class="item-name">Akpan Tilapia</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">2500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h3 class="cat-title">Grillades &amp; Riz</h3>
+            <div class="menu-items">
+              <div class="menu-item" data-name="Poisson Braisé" data-price="3500 – 6000 F">
+                <div class="item-info">
+                  <span class="item-name">Poisson Braisé</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">3500 – 6000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Poulet Braisé" data-price="2500 – 5000 F">
+                <div class="item-info">
+                  <span class="item-name">Poulet Braisé</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">2500 – 5000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Riz Blanc" data-price="1000 – 1500 F">
+                <div class="item-info">
+                  <span class="item-name">Riz Blanc</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1000 – 1500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Riz Cantonais" data-price="1000 – 1500 F">
+                <div class="item-info">
+                  <span class="item-name">Riz Cantonais</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1000 – 1500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Riz Gras" data-price="1000 – 1500 F">
+                <div class="item-info">
+                  <span class="item-name">Riz Gras</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1000 – 1500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- International -->
+      <div class="tab-content" id="tab-international">
+        <div class="menu-grid">
+          <div class="menu-category">
+            <h3 class="cat-title">Frites &amp; Pommes</h3>
+            <div class="menu-items">
+              <div class="menu-item" data-name="Frite au Poulet" data-price="1500 – 3000 F">
+                <div class="item-info">
+                  <span class="item-name">Frite au Poulet</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1500 – 3000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Pommes Sautées au Petit Pois" data-price="2500 F">
+                <div class="item-info">
+                  <span class="item-name">Pommes Sautées au Petit Pois</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">2500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Pomme Frite au Petit Pois" data-price="1500 F">
+                <div class="item-info">
+                  <span class="item-name">Pomme Frite au Petit Pois</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-category">
+            <h3 class="cat-title">Plats Spéciaux</h3>
+            <div class="menu-items">
+              <div class="menu-item" data-name="Cassoulet" data-price="2500 F">
+                <div class="item-info">
+                  <span class="item-name">Cassoulet</span>
+                  <span class="item-desc">Gésier, viande ou poulet</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">2500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Spaghetti" data-price="1000 – 1500 F">
+                <div class="item-info">
+                  <span class="item-name">Spaghetti</span>
+                </div>
+                <div class="item-right">
+                  <span class="item-price">1000 – 1500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boissons -->
+      <div class="tab-content" id="tab-boissons">
+        <div class="menu-grid">
+          <div class="menu-category">
+            <h3 class="cat-title">Jus Très Naturels &amp; Yaourt</h3>
+            <div class="menu-items">
+              <div class="menu-item" data-name="Yaourt" data-price="500 – 1000 F">
+                <div class="item-info"><span class="item-name">Yaourt</span></div>
+                <div class="item-right">
+                  <span class="item-price">500 – 1000 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Jus d'Ananas" data-price="600 – 1500 F">
+                <div class="item-info"><span class="item-name">Jus d'Ananas</span><span class="item-desc">100% naturel</span></div>
+                <div class="item-right">
+                  <span class="item-price">600 – 1500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Jus d'Orange" data-price="600 – 1500 F">
+                <div class="item-info"><span class="item-name">Jus d'Orange</span><span class="item-desc">100% naturel</span></div>
+                <div class="item-right">
+                  <span class="item-price">600 – 1500 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Jus de Citron" data-price="300 – 600 F">
+                <div class="item-info"><span class="item-name">Jus de Citron</span><span class="item-desc">100% naturel</span></div>
+                <div class="item-right">
+                  <span class="item-price">300 – 600 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+              <div class="menu-item" data-name="Jus de Bissap" data-price="300 – 600 F">
+                <div class="item-info"><span class="item-name">Jus de Bissap</span><span class="item-desc">100% naturel</span></div>
+                <div class="item-right">
+                  <span class="item-price">300 – 600 F</span>
+                  <button class="btn-add" aria-label="Ajouter">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== HORAIRES ===== -->
+  <section class="horaires-section" id="horaires">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-eyebrow">Planning</p>
+        <h2 class="section-title">Nos Horaires</h2>
+        <div class="title-ornament light"><span></span><span class="dot"></span><span></span></div>
+      </div>
+      <div class="horaires-grid">
+        <div class="jour-card closed">
+          <span class="jour">Lundi</span>
+          <span class="heure">—</span>
+          <span class="status closed">Fermé</span>
+        </div>
+        <div class="jour-card">
+          <span class="jour">Mardi</span>
+          <span class="heure">10h00 – 23h30</span>
+          <span class="status open">Ouvert</span>
+        </div>
+        <div class="jour-card">
+          <span class="jour">Mercredi</span>
+          <span class="heure">10h00 – 23h30</span>
+          <span class="status open">Ouvert</span>
+        </div>
+        <div class="jour-card">
+          <span class="jour">Jeudi</span>
+          <span class="heure">10h00 – 23h30</span>
+          <span class="status open">Ouvert</span>
+        </div>
+        <div class="jour-card">
+          <span class="jour">Vendredi</span>
+          <span class="heure">10h00 – 23h30</span>
+          <span class="status open">Ouvert</span>
+        </div>
+        <div class="jour-card">
+          <span class="jour">Samedi</span>
+          <span class="heure">10h00 – 23h30</span>
+          <span class="status open">Ouvert</span>
+        </div>
+        <div class="jour-card highlight">
+          <span class="jour">Dimanche</span>
+          <span class="heure">10h00 – 23h30</span>
+          <span class="status open">Ouvert</span>
+        </div>
+      </div>
+      <p class="horaires-note">Ouvert du Mardi au Dimanche · Fermé le Lundi</p>
+    </div>
+  </section>
+
+  <!-- ===== POPUP CHOIX PRIX ===== -->
+  <div class="prix-overlay" id="prixOverlay">
+    <div class="prix-popup">
+      <p class="prix-popup-nom" id="prixPopupNom"></p>
+      <p class="prix-popup-label">Choisissez un prix :</p>
+      <div class="prix-choices" id="prixChoices"></div>
+      <button class="prix-annuler" id="prixAnnuler">Annuler</button>
+    </div>
+  </div>
+
+  <!-- ===== PANIER FLOTTANT ===== -->
+  <div class="panier-bar" id="panierBar">
+    <div class="panier-info">
+      <span class="panier-icon">🛒</span>
+      <span class="panier-count" id="panierCount">0 article</span>
+      <span class="panier-items-preview" id="panierPreview"></span>
+    </div>
+    <div class="panier-actions">
+      <button class="panier-vider" id="panierVider">Vider</button>
+      <button class="panier-commander" id="panierCommander">Commander 🛵</button>
+    </div>
+  </div>
+
+  <!-- ===== LIVRAISON ===== -->
+  <section class="livraison-section" id="livraison">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Commande à domicile</p>
+        <h2 class="section-title">Livraison</h2>
+        <div class="title-ornament"><span></span><span class="dot"></span><span></span></div>
+        <p class="livraison-intro">Disponible dès 12h · Mardi au Dimanche</p>
+      </div>
+
+      <div class="livraison-wrapper">
+        <div class="livraison-info">
+          <div class="liv-item">
+            <span class="liv-icon">🛵</span>
+            <div>
+              <strong>Livraison à domicile</strong>
+              <p>Commandez et recevez vos plats directement chez vous</p>
+            </div>
+          </div>
+          <div class="liv-item">
+            <span class="liv-icon">🕛</span>
+            <div>
+              <strong>Dès 12h00</strong>
+              <p>Du mardi au dimanche</p>
+            </div>
+          </div>
+          <div class="liv-item">
+            <span class="liv-icon">📲</span>
+            <div>
+              <strong>Via WhatsApp</strong>
+              <p>Votre commande est envoyée directement sur notre WhatsApp</p>
+            </div>
+          </div>
+          <div class="liv-hint" id="livHint">
+            <p>👆 Ajoutez des plats depuis le menu ci-dessus, puis cliquez sur <strong>"Commander 🛵"</strong> pour remplir votre livraison.</p>
+          </div>
+        </div>
+
+        <form class="livraison-form" id="livraisonForm">
+          <div class="form-recap" id="formRecap">
+            <p class="recap-label">🍽️ Votre commande</p>
+            <div id="recapList"></div>
+          </div>
+          <div class="form-group">
+            <label for="liv-nom">Votre nom</label>
+            <input type="text" id="liv-nom" placeholder="Ex : Kofi Mensah" required />
+          </div>
+          <div class="form-group">
+            <label for="liv-tel">Votre téléphone</label>
+            <input type="tel" id="liv-tel" placeholder="Ex : 90 00 00 00" required />
+          </div>
+          <div class="form-group">
+            <label for="liv-adresse">Adresse de livraison</label>
+            <input type="text" id="liv-adresse" placeholder="Ex : Quartier Bè, près de l'église..." required />
+          </div>
+          <button type="submit" class="btn-whatsapp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Envoyer la commande via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nous Joindre</p>
+        <h2 class="section-title">Contact</h2>
+        <div class="title-ornament"><span></span><span class="dot"></span><span></span></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Téléphone</h3>
+          <a href="tel:+22891393541">91 39 35 41</a>
+          <a href="tel:+22879989821">79 98 98 21</a>
+        </div>
+        <div class="contact-card featured">
+          <div class="contact-icon">🕙</div>
+          <h3>Horaires d'ouverture</h3>
+          <p>Tous les jours</p>
+          <p class="time-big">10h00 – 23h30</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Localisation</h3>
+          <p>Lomé, Togo</p>
+          <p class="sub-text">Restaurant Espace Providence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-ep">EP</span>
+        <div>
+          <span class="logo-name">Espace Providence</span>
+          <span class="logo-sub">Restaurant · Lomé, Togo</span>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2025 Restaurant Espace Providence. Tous droits réservés.</p>
+      <div class="footer-contact">
+        <a href="tel:+22891393541">91 39 35 41</a>
+        <span>·</span>
+        <a href="tel:+22879989821">79 98 98 21</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
